@@ -1,0 +1,499 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(44, 44, 44);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input:focus, select:focus, textarea:focus{
+    outline: chartreuse solid 2px;
+}
+
+h1{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+#back{
+    color: rgb(4, 255, 201);
+    align-self: flex-start;
+    margin: 20px 0 0 20px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*? LOGIN */
+.container-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(71, 79, 99);
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 3px rgb(15, 15, 15);
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.container-login h1{
+    color: rgb(62, 168, 255);
+    margin: 30px 0px 60px 0px;
+    font-size: 35px;
+    font-style: italic;
+}
+.container-login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container-login input{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: rgb(210, 221, 241);
+    transition: all 0.2s linear;
+}
+.container-login input:focus{
+    background-color: rgb(203, 190, 231);
+    outline: none;
+}
+#login-submit{
+    background-color: rgb(31, 150, 197);
+    color: whitesmoke;
+    font-size: 20px;
+    transition: all 0.2s linear;
+}
+#login-submit:hover{
+   background-color: blueviolet;
+}
+/*? END LOGIN */
+
+/*? admin */
+#main{
+    width: 100%;
+}
+#main h1{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-size: 60px;
+    font-style: italic;
+}
+#main div{
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+#main div a{
+    width: 250px;
+    margin: 20px 30px;
+    padding: 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    aspect-ratio: 4/3;
+    color: white;
+    background-color: rgb(0, 80, 117);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s linear;
+}
+#main div a:hover{
+    background-color: rgb(0, 167, 218);
+}
+#logout{
+    align-self: flex-end;
+    margin: 20px 30px;
+    padding: 5px 10px;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(180, 1, 37);
+    transition: all 0.3s linear;
+}
+#logout span{
+    font-size: 35px;
+}
+#logout:hover{
+    background-color: rgb(145, 0, 202);
+}
+/*? END admin */
+
+/*? Add Product */
+.form-ap{
+    background-color: cornflowerblue;
+    width: 60%;
+    border-radius: 10px;
+    padding: 40px;
+    border: 2px solid whitesmoke;
+}
+.form-ap input{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60%;
+    height: 50px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+.form-ap select{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 60%;
+    height: 50px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+.form-ap textarea{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    resize: none;
+    width: 60%;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 10px;
+}
+.form-ap input[type=submit], .form-ap a{
+    width: 30%;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: black;
+    height: 50px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(0, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+}
+.form-ap a{
+    background-color: crimson;
+}
+
+.form-ap input[type=file]{
+    background-color: rgb(231, 231, 231);
+    color: black;
+    cursor: pointer;
+    width: 60%;
+}
+.form-ap input[type=file]::file-selector-button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    /* width: 100%; */
+    text-align: center;
+}
+/*? END Add Product */
+
+/*? Edit User */
+.add-user-link{
+    text-decoration: none;
+    padding: 10px;
+    background-color: cornflowerblue;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    margin: 20px 0;
+}
+.user{
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    background-color: rgb(19, 110, 163);
+    padding: 20px;
+    width:700px;
+    height: 100px;
+}
+.user h2{
+    font-size: 15px;
+    margin-right: 20px;
+    width: 50%;
+}
+.user a{
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: rgb(255, 104, 78);
+    padding: 5px;
+    width: 80px;
+    font-size: 13px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#edit-user-info{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+#edit-user-info form{
+    /* width: 80%; */
+    height: 500px;
+}
+#edit-user-info input,#edit-user-info a{
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+}
+#edit-user-info input[type=submit]{
+    background-color: cyan;
+}
+#edit-user-info a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: -80px;
+    background-color: rgb(255, 63, 63);
+}
+/*? END EditUser */
+
+/*?========== add user ========== */
+.add-user-form input{
+    margin: 10px 0;
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+}
+.add-user-form input[type=submit]{
+    background-color: rgb(255, 153, 0);
+}
+/*?========== add user end ========== */
+
+/*?========== Cart ========== */
+.cart table{
+    min-width: 300px;
+    width: 80%;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 30px;
+    background-color: rgb(142, 180, 125);
+    color: white;
+}
+.cart th {
+    border: 1px solid white;
+    background-color: rgb(0, 167, 209);
+    padding: 10px;
+    width: 12%;
+}
+
+.cart td{
+    border: 1px solid white;
+    height: 120px;
+}
+.cart td textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+}
+.cart img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.th-model{
+    width: 20% !important;
+}
+.th-specs{
+    width: 20% !important;
+}
+.cart td a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.cart td a:hover{
+    color: black;
+}
+.cart h1{
+    margin-top: 50px;
+    color: white;
+}
+/*?========== Cart END ========== */
+/*? New Category */
+.new-category{
+    width: 400px;
+}
+.new-category input[type=text]{
+    width: 315px;
+    height: 35px;
+    padding: 10px;
+}
+.new-category input[type=submit]{
+    width: 80px;
+    height: 35px;
+}
+.category-list{
+    margin-top: 50px;
+    min-width: 400px;
+    width: 50%;
+}
+.category-list h2{
+    margin-bottom: 20px;
+    color: rgb(43, 205, 255);
+}
+.mod-cat{
+    flex-direction: row;
+    border: 1px solid whitesmoke;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+}
+.mod-cat h3{
+    margin-right: auto;
+    margin-left: 10px;
+}
+.mod-cat input[type=submit]{
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 5px;
+    width: 80px;
+    background-color: rgb(0, 180, 171);
+    color: white;
+    cursor: pointer;
+}
+.mod-cat-delete-btn{
+    background-color: crimson!important;
+    color: white;
+}
+.edit-cat{
+    position: absolute;
+    flex-direction: row;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 10, 19, 0.8);
+}
+.edit-cat input[type=text]{
+    width: 350px;
+    padding: 20px;
+    border: 2px solid whitesmoke;
+    border-right-color: black;
+    font-size: 15px;
+}
+.edit-cat input[type=submit], .edit-cat a{
+    text-align: center;
+    font-size: 15px;
+    width: 100px;
+    padding: 20px;
+    background-color: rgb(0, 132, 255);
+    font-weight: bold;
+    color: whitesmoke;
+    border: 2px solid rgb(212, 212, 212);
+    cursor: pointer;
+}
+.edit-cat a{
+    text-decoration: none;
+    background-color: crimson;
+}
+/*? END Edit User */
+
+/*? Edit Product */
+.edit-pr{
+    min-width: 300px;
+    width: 80%;
+}
+.edit-pr table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+.edit-pr th {
+    border: 1px solid white;
+    background-color: rgb(0, 167, 209);
+    padding: 10px;
+    width: 10%;
+}
+
+.edit-pr td{
+    border: 1px solid white;
+    height: 150px;
+}
+.edit-pr td textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    color: white;
+    background-color: transparent;
+    padding: 5px;
+}
+.edit-pr img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+.th-model{
+    width: 15% !important;
+}
+.th-specs{
+    width: 25% !important;
+}
+.edit-pr div{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.edit-pr div a{
+    border: 1px solid white;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(4, 175, 158);
+    color: white;
+    font-weight: bold;
+    width: 100;
+    margin: 0 5px;
+    text-align: center;
+}
+.delete-btn{
+    background-color: crimson !important;
+}
+
+/*? END Edit Product */
+
+
+
+
+@media only screen and (max-width: 700px){
+    .container-login{
+        width: 80%;
+    }
+}

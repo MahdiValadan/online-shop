@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.auth-body{
+    background-image: linear-gradient(45deg, rgb(190, 120, 255), rgb(115, 186, 253));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.auth-body div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(238, 238, 238);
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px rgb(172, 172, 172);
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.auth-body h1{
+    color: rgb(31, 137, 224);
+    margin: 30px 0px 60px 0px;
+    font-size: 35px;
+}
+.auth-body form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.auth-body input{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 15px;
+    transition: all 0.2s linear;
+}
+.auth-body input:focus{
+    background-color: rgb(223, 231, 240);
+}
+.auth-body input[type=submit]{
+    background-color: rgb(6, 161, 223);
+    color: whitesmoke;
+    font-size: 20px;
+    transition: all 0.2s linear;
+}
+.auth-body input[type=submit]:hover{
+    background-color: rgb(196, 82, 180);
+}
+.auth-body a{
+    text-decoration: none;
+    color: rgb(0, 168, 235);
+    margin-bottom: 10px;
+    transition: all 0.3s linear;
+}
+.auth-body a:hover{
+    color: blueviolet;
+}
+@media only screen and (max-width: 700px){
+    .auth-body div{
+        width: 80%;
+    }
+}
