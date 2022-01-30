@@ -1,5 +1,5 @@
 # Online Shop
-Online shop website (include admin control panel) with pure PHP, HTML, CSS, and JS
+Online shop website (includes admin control panel) with pure PHP, HTML, CSS, and JS
 
 ![1](/screenshot/1.png)
 
